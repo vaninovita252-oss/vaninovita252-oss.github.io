@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+.logo {
+    font-weight: 700;
+    color: #24c6ee;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f1f5f9;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #334967, #1034b5);
+    padding: 80px 20px 60px;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #101111;
+    color: #e0e5f3;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #000407;
+    transform: scale(1.05);
+}
+
+/* ABOUT */
+.about {
+    padding: 70px 10%;
+    background: #1d2a43;
+    text-align: center;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.about-right {
+    max-width: 500px;
+}
+
+.about-right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.about-right p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* PROJECT + SKILL */
+.projects {
+    padding: 70px 10%;
+    background: #1d4e97;
+}
+
+.projects-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Skill kiri (sudah digeser sedikit ke kiri) */
+.skills {
+    flex: 1;
+    text-align: left;
+    margin-left: -15px; /* geser kiri sedikit */
+}
+
+.skills h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Project kanan */
+.project-side {
+    flex: 2;
+    text-align: left;
+}
+
+.project-side h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* CARD SEJAJAR SATU BARIS */
+.project-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+/* CARD KECIL */
+.card {
+    background: #242c3f;
+    padding: 12px;
+    border-radius: 10px;
+    width: 160px;
+    box-shadow: 0 4px 12px rgba(8, 8, 8, 0.25);
+    transition: 0.3s;
+}
+
+.card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 10%;
+    background: #182941;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #090d23;
+    font-size: 0.8rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .projects-wrapper {
+        flex-direction: column;
+    }
+}
